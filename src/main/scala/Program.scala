@@ -134,4 +134,11 @@ def main() = {
   require(telNumber matches "(202)456-1111")
 
   println("All the tests passed!")
+
+  // For some reason we could not run the following test through our terminal but running it here works just fine
+
+  // import machines.{_, given}        // import all our extensions
+  // import dfa.writeFile              // import a function for making pictures from DFAs
+  // writeFile(('a' <*>) ~ 'b') 
+  // println("Done")
 }
