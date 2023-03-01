@@ -1,5 +1,6 @@
 import machines.regex._
 import machines.given
+import machines._
 
 @main
 def main() = {

@@ -4,8 +4,8 @@ import regex._
 import dfa._
 import machines.given
 
+// Part 1:
+given Conversion[Char, RegularLanguage] = Character(_)
 
-implicit class RegularLanguage(c: Char) {
-  def matches(s: String): Boolean = 
-    c.toString == s
-}
+
+// Part 2:
