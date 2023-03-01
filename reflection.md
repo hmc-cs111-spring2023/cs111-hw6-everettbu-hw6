@@ -21,6 +21,8 @@ Overall, the design of this internal DSL is relatively simple and easy to use, w
   "I would use extension to..." or "Scala's rules for valid
   identifiers prevent...")
 
+One aspect of the design that works well is the use of concise syntax for common operations, such as concatenation and union. The ability to chain operations using infix notation also makes the code more readable and easier to understand.
+
 However, one limitation of this design is that it is not particularly expressive or flexible, and may not be suitable for more complex regular expressions. For example, it does not support backreferences, lookahead or lookbehind, which are commonly used in regular expressions to match more complex patterns.
 
 To improve the language, a possible syntactic change could be to introduce a more flexible and expressive way of specifying regular expressions, perhaps using a combination of a DSL and a parser. This could involve allowing users to define their own operators, using regular expressions or other patterns as input, and allowing for more complex constructions such as backreferences, lookbehind and lookahead. The implementation of such a change would require a more advanced understanding of the Scala language and its features, as well as a more in-depth knowledge of regular expressions and their syntax.
