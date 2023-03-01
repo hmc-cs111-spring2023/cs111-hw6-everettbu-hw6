@@ -2,5 +2,10 @@ package machines
 
 import regex._
 import dfa._
+import machines.given
 
-// TODO: Add your code below
+
+implicit class RegularLanguage(c: Char) {
+  def matches(s: String): Boolean = 
+    c.toString == s
+}
