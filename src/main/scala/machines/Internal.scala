@@ -2,7 +2,6 @@ package machines
 
 import regex._
 import dfa._
-import machines.given
 
 // Part 1:
 given Conversion[Char, RegularLanguage] = Character(_)
@@ -34,7 +33,6 @@ extension (lang1: RegularLanguage)
 
 
 // Part 4:
-    
 given Conversion[RegularLanguage, DFA] = lang => lang.toDFA(using characters(lang))
 
 def characters(lang: RegularLanguage): Set[Char] =
