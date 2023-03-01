@@ -14,6 +14,7 @@ given Conversion[String, RegularLanguage] = (s: String) => {
   chars.reduce((a, b) => Concat(a, b))
 }
 
+// Part 3:
 extension (lang1: RegularLanguage) {
   def ||(lang2: RegularLanguage): RegularLanguage = Union(lang1, lang2)
 
